@@ -1,0 +1,67 @@
+#categorias{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+    margin-bottom: 7vh;
+}
+.categoriaCard{
+    transition: all 0.4s;
+}
+.categoriaCard:hover{
+    transition: all 0.4s;
+    
+}
+.categoriaCard:hover h1{
+    display: none;
+}
+.categoriaCard:hover::before{
+    transition: all 0.4s;
+    content: "";
+    height: inherit;
+    width: inherit;
+    background-color: var(--1);
+    position: absolute; 
+    filter: opacity(0.3);  
+
+}
+.categoriaCard:hover::after{
+    transition: all 0.4s;
+    z-index: 7;
+    content: "Ver mas";
+    position: relative;
+    width: 0;
+    top: 30%;
+    right: 50%;
+
+}
+
+
+#categorias div{
+    width: 20vw;
+    height: 20vw;
+    background-color: var(--1);
+    margin-bottom: 2vw;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#categorias h1{
+    position: relative;
+    width: 0;
+    font-weight: lighter;
+    top: 40%;
+    right: 80%;
+
+}
+.categoriaImage{
+    width: 100%;
+    height: auto;
+}

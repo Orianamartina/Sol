@@ -1,0 +1,12 @@
+#banner{
+    max-width: 100vw;
+    max-height: 96vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20%;
+    margin-top: 5vh;
+    background-image: url("../../../public/sampleImage2.jpg");
+    background-size: cover;
+    color: black;
+}

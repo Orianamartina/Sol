@@ -1,0 +1,30 @@
+.white-no-border{
+    background-color: white;    
+    padding: 0.5% 3% 0.5% 3%;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.white-no-border:hover{
+    filter: opacity(0.5);
+}
+.white-no-border h1 {
+    font-size: medium;
+    font-weight: lighter;
+}
+
+.white-pink-border-black{
+    border: 1px solid black;
+    background-color: white;
+    padding: 1%;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.white-pink-border-black:hover{
+    background-color: var(--3);
+    transition: all 0.4s;
+}
+.white-pink-border-black h1 {
+    font-size: medium;
+    font-weight: lighter;
+}

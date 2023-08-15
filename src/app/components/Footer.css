@@ -1,0 +1,11 @@
+#footer{
+    display: flex;
+    flex-direction: row;
+    padding: 0 10% 0 10%;
+    justify-content: space-evenly;
+    font-family: var(--font);
+    font-weight: 100;
+    font-size: small;
+    text-align: center;
+    background-color: var(--1);
+}

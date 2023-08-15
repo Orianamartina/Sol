@@ -1,0 +1,28 @@
+#destacados{
+    width: 100%;
+    margin-top: 7%;
+    text-align: center;
+    margin-bottom: 7vh;
+    cursor: pointer;
+    
+}
+.cardContainer{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:    space-evenly;
+    margin-bottom: 7vh;
+    padding-bottom: 7vh;
+    border-bottom: 1px solid black;
+}
+
+
+.destacadosTitle{
+    font-weight: 300;
+}
+.destacadosDescripcion{
+    font-weight:lighter;
+    font-size:large;
+}
