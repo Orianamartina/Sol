@@ -1,6 +1,8 @@
 import "./Header.css"
 import Link from "next/link"
-
+import carro from "../../../public/carro.png"
+import instagram from "../../../public/instagram.png"
+import Image from "next/image"
 
 function Header() {
 
@@ -20,8 +22,8 @@ function Header() {
             <h1>Info</h1>
             <h1>Contacto</h1>
             <h1>SOL</h1>
-            <h1>Instagram</h1>
-            <h1>carrito</h1>
+            <Image src={instagram} className="icono" />
+            <Image src={carro} className="icono" />
         </div>
     
     </>

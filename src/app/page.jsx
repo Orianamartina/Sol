@@ -40,8 +40,8 @@ export default function home () {
         <>
             <Banner />
             <Destacados destacados={destacados} />
-            <Categorias categorias={categorias}/>
-           {/* <MoreContent />
+          {/*  <Categorias categorias={categorias}/>
+            <MoreContent />
             <Info /> 
     <Footer />*/}
 

@@ -7,4 +7,10 @@
 }
  #header h1{
     font-size: 16px;
+    text-decoration: none;
  }
+
+.icono{
+    height: 2vw;
+    width: auto;
+}
