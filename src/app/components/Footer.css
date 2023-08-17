@@ -7,5 +7,6 @@
     font-weight: 100;
     font-size: small;
     text-align: center;
-    background-color: var(--1);
+    background-color: black;
+    color: var(--2);
 }

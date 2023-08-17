@@ -1,4 +1,28 @@
 #productSection{
-    width: 80%;
-    background-color: red;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  border-top: 1px solid black;
+  padding-top: 5%;
+  
+}
+.productCardProductSection{
+  width: 21%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
+@media (max-width:800px){
+    
+    #productSection{
+        flex-direction: column;
+        width: 90%;
+    }
+    .productCardProductSection{
+        width: 70%;
+        margin: auto;
+    }
 }

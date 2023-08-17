@@ -6,7 +6,10 @@ function TarjetaDeProducto(props) {
   return (
     <>
         <div onClick={props.onClick} id="tarjetaDeProducto">
-            <Image src={props.imagen} />
+            <div className="imageDiv">
+               <Image src={props.imagen} />
+            </div>
+           
 
             <h1>{props.titulo}</h1>
             <h2>{props.precio}</h2>

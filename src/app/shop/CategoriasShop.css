@@ -1,2 +1,15 @@
 
 
+#categoriasShop{
+    width: 100%;
+    font-size: small;
+}
+
+#categoriasShop ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+#categoriasShop li{
+    cursor: pointer;
+}

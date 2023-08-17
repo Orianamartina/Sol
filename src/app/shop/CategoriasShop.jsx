@@ -1,10 +1,10 @@
 
-
+import "./CategoriasShop.css"
 
 
 function CategoriasShop(props) {
   return (
-    <div>
+    <div id="categoriasShop">
         <ul>
             {props.categorias.map(categoria => {
                 return(

@@ -3,7 +3,8 @@
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
-    margin-top: 5vh;
+    background-color: black;
+    color: white;
 }
  #header h1{
     font-size: 16px;
@@ -13,4 +14,34 @@
 .icono{
     height: 2vw;
     width: auto;
+}
+.logo{
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+.logoLink{
+    width: 10%;
+}
+
+.separator{
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 5%;
+}
+.link{
+    text-decoration: none;
+    color: var(--6);
+    transition: all 0.3s;
+    
+}
+.link:hover{
+    text-decoration: underline var(--6);
+}
+.link h1{
+    font-weight: lighter;
+    font-size: smaller;
 }

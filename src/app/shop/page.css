@@ -1,6 +1,8 @@
 #shopPage{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     margin: auto;
+    justify-content: space-evenly;
+    margin-top: 5vh;
 }
