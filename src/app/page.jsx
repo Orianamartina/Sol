@@ -5,24 +5,32 @@ import sampleImage from "../../public/sampleImage.jpeg"
 import Categorias from "./components/Categorias"
 
 import sampleImage2 from "../../public/sampleImage2.jpg"
+import one from "../../public/1.png"
+import two from "../../public/2.png"
+import three from "../../public/3.png"
+import four from "../../public/4.png"
+import five from "../../public/5.png"
+import six from "../../public/6.png"
+
+
 
 const destacados = [
-  {imagen: sampleImage,
-  titulo:"Destacado1",
+  {imagen: one,
+  titulo:"Top verde",
   precio: "$500"},
-  {imagen: sampleImage,
-  titulo:"Destacado1",
+  {imagen: two,
+  titulo:"Coso blanco(?",
   precio: "$500"},
-  {imagen: sampleImage,
-  titulo:"Destacado1",
+  {imagen: three,
+  titulo:"Mocasines bb",
   precio: "$500"},
-  {imagen: sampleImage,
+  {imagen: four,
     titulo:"Destacado1",
     precio: "$500"},
-    {imagen: sampleImage,
+    {imagen: five,
     titulo:"Destacado1",
     precio: "$500"},
-    {imagen: sampleImage,
+    {imagen: six,
     titulo:"Destacado1",
     precio: "$500"},
 

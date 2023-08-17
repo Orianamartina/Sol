@@ -13,19 +13,20 @@
     font-weight: lighter;
 }
 
-.white-pink-border-black{
-    border: 1px solid black;
+.white-green-border-black{
+    border: 1px solid var(--5);
+    box-shadow: 2px 2px var(--5);
     background-color: white;
     padding: 1%;
     cursor: pointer;
     transition: all 0.4s;
 }
-.white-pink-border-black:hover{
-    background-color: var(--3);
+.white-green-border-black:hover{
+    background-color: var(--5);
     transition: all 0.4s;
-    box-shadow: 10px 10px black;
+
 }
-.white-pink-border-black h1 {
+.white-green-border-black h1 {
     font-size: medium;
     font-weight: lighter;
 }

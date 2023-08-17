@@ -14,12 +14,16 @@
     align-items: center;
     justify-content:    space-evenly;
     margin-bottom: 7vh;
-    padding-bottom: 7vh;
-    border-bottom: 2px solid var(--5);
-    border-top: 2px solid var(--5);
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+    border-bottom: 2px solid var(--1);
+    border-top: 2px solid var(--1);
     
 }
 
+.tarjetaDeProductoContainer{
+    width: 30%;
+}
 .destacadosTitle{
     font-weight: 300;
 }

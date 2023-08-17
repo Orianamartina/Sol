@@ -1,8 +1,19 @@
-#shopPage{
+.shopPage{
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: auto;
     justify-content: space-evenly;
     margin-top: 5vh;
+    transition: all 0.5s;
+}
+.blurry{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+    transition: all 0.5s;
+    filter: blur(15px);
 }

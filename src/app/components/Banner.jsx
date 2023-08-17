@@ -9,7 +9,7 @@ function Banner() {
         <div id="banner">
             <h1>TEXTOOOO</h1>
             <h2>texto</h2>
-            <Button class="white-no-border" text="Comprar ahora"/>
+            <Button class="white-green-border-black" text="Ver productos"/>
         </div>
 
     </>

@@ -12,20 +12,22 @@ function Destacados(props) {
             <h2 className="destacadosDescripcion">texto mucho texto aca va texto </h2>
             <div className="cardContainer">
             {
-                props.destacados.map(prod => {
+                props.destacados.map((prod, index) => {
                     return(
-                    <TarjetaDeProducto 
-                        key={prod.titulo}
-                        imagen={prod.imagen}
-                        titulo ={prod.titulo}
-                        precio ={prod.precio}
-                    />)
+                        <div key={prod.titulo} className="tarjetaDeProductoContainer">
+                            <TarjetaDeProducto 
+                            
+                            producto={prod}
+                            style={index%2===0? "even": "uneven"}
+                            />
+                        </div>
+                    )
                 })
             } 
             
             </div>
             <Link href={"/shop"}>
-                <Button text="Ver todos los productos" class="white-pink-border-black"/>
+                <Button text="Ver todos los productos" class="white-green-border-black"/>
             </Link>
        
         </div>   

@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image"
 import "./TarjetaDeProducto.css"
 
@@ -5,14 +6,14 @@ import "./TarjetaDeProducto.css"
 function TarjetaDeProducto(props) {
   return (
     <>
-        <div onClick={props.onClick} id="tarjetaDeProducto">
+        <div onClick={() => props.onClick(props.producto)} id="tarjetaDeProducto" className={props.style}>
             <div className="imageDiv">
-               <Image src={props.imagen} />
+               <Image src={props.producto.imagen} />
             </div>
            
 
-            <h1>{props.titulo}</h1>
-            <h2>{props.precio}</h2>
+            <h1>{props.producto.titulo}</h1>
+            <h2>{props.producto.precio}</h2>
         </div>
     
     </>

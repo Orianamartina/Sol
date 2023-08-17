@@ -3,33 +3,45 @@
     margin-top: 3%;
     margin-bottom: 3%;
     text-align: center;
+    cursor: pointer;
+    padding-bottom: 2%;
 }
 .imageDiv{
     overflow: hidden;
+    height: 43vh;
+    
 }
 
 #tarjetaDeProducto:hover{
-    background-color: var(--5);
+
 
 }
 
 
 #tarjetaDeProducto img{
-    width: 100%;
-    /*margin-top: 5%;*/
-    height: auto;
     transition: all 1s;
+    width: 100%;
+    height: auto;
+
+    
 }
 #tarjetaDeProducto img:hover{
     scale: 1.3;
 }
 
 #tarjetaDeProducto h1{
-    font-size: 1.5vw;
-    font-weight: 400;
+    font-size: 1.2vw;
+    font-weight:700;
 }
-#tarjetaDeProducto >h2 {
+#tarjetaDeProducto h2 {
     font-size: 1vw;
+    
+}
+.even{
+    background-color: var(--1);
+}
+.uneven{
+    background-color: whitesmoke;
 }
 @media (max-width:800px){
     #tarjetaDeProducto{

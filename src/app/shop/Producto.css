@@ -1,0 +1,32 @@
+#producto{
+    position: fixed ;
+    z-index: 7;
+    left: 20%;
+    height: 30vw;
+    width: 60vw;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    transition: all 1s;
+}
+#producto div{
+    background-color: var(--5);
+}
+.productoDetalleImagen{
+     height: 90%;
+     margin: 5%;
+     width: auto;
+}
+.detalleContent{
+    padding: 3%;
+    text-align: center;
+}
+#producto h1{
+
+}
+#producto h2{
+
+}
+#producto p{
+    text-align: justify;
+}
