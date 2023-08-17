@@ -8,8 +8,8 @@ function ProductSection(props) {
     <div id="productSection">
         {props.productos.map((p) => {
             return(
-                <div className="productCardProductSection">
-                    <TarjetaDeProducto titulo={p.titulo} precio={p.precio} key={p.titulo} imagen={p.imagen} />
+                <div className="productCardProductSection" key={p.titulo}>
+                    <TarjetaDeProducto titulo={p.titulo} precio={p.precio}  imagen={p.imagen} />
                 </div>
             )
         })}
