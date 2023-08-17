@@ -8,7 +8,7 @@ function CategoriasShop(props) {
         <ul>
             {props.categorias.map(categoria => {
                 return(
-                    <li onClick={() => props.setCategoria(categoria)}>
+                    <li key={categoria} onClick={() => props.setCategoria(categoria)}>
                         {categoria}
                     </li>
                 )

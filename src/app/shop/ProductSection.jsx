@@ -9,7 +9,7 @@ function ProductSection(props) {
         {props.productos.map((p) => {
             return(
                 <>
-                    <TarjetaDeProducto titulo={p.titulo} precio={p.precio} imagen={p.imagen} />
+                    <TarjetaDeProducto titulo={p.titulo} precio={p.precio} key={p.titulo} imagen={p.imagen} />
                 </>
             )
         })}
