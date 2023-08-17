@@ -16,6 +16,15 @@ const destacados = [
   {imagen: sampleImage,
   titulo:"Destacado1",
   precio: "$500"},
+  {imagen: sampleImage,
+    titulo:"Destacado1",
+    precio: "$500"},
+    {imagen: sampleImage,
+    titulo:"Destacado1",
+    precio: "$500"},
+    {imagen: sampleImage,
+    titulo:"Destacado1",
+    precio: "$500"},
 
 ]
 

@@ -5,7 +5,7 @@ import "./TarjetaDeProducto.css"
 function TarjetaDeProducto(props) {
   return (
     <>
-        <div id="tarjetaDeProducto">
+        <div onClick={props.onClick} id="tarjetaDeProducto">
             <Image src={props.imagen} />
 
             <h1>{props.titulo}</h1>

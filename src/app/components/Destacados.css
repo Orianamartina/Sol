@@ -26,3 +26,9 @@
     font-weight:lighter;
     font-size:large;
 }
+@media (max-width:800px){
+    .cardContainer{
+        flex-direction: column;
+        width: 90%;
+    }
+}

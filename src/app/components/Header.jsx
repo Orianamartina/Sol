@@ -23,7 +23,6 @@ function Header() {
             <h1>Contacto</h1>
             <h1>SOL</h1>
             <Image src={instagram} className="icono" />
-            <Image src={carro} className="icono" />
         </div>
     
     </>

@@ -10,6 +10,7 @@ function Footer() {
                 <h3>Instagram</h3>
                 <h3>Info util</h3>
                 <h3>Algo mas?</h3>
+                <h3>Como comprar?</h3>
             </div>
             
             <div>

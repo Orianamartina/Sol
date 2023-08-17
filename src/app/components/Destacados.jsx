@@ -8,7 +8,7 @@ function Destacados(props) {
   return (
     <>
         <div id="destacados">
-            <h1 className="destacadosTitle">Productos destacados:</h1>
+            <h1 className="destacadosTitle">Galeria</h1>
             <h2 className="destacadosDescripcion">texto mucho texto aca va texto </h2>
             <div className="cardContainer">
             {
@@ -25,7 +25,7 @@ function Destacados(props) {
             
             </div>
             <Link href={"/shop"}>
-                <Button text="Más productos" class="white-pink-border-black"/>
+                <Button text="Ver todos los productos" class="white-pink-border-black"/>
             </Link>
        
         </div>   
