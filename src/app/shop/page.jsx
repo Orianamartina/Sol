@@ -73,8 +73,14 @@ const prods =[
   
  const filtrarProductos = (categoria) => {
     const products = store.getState().redux.value.products
-    let productosFiltrados = products.filter(prod => prod.categoria == categoria)
-    setProductos(productosFiltrados)
+    if (categoria == "todos"){
+      setProductos(products)
+    }
+    else{
+      let productosFiltrados = products.filter(prod => prod.categoria == categoria)
+      setProductos(productosFiltrados)
+    }
+    
   
   }
 

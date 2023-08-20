@@ -7,7 +7,7 @@ function CategoriasShop(props) {
     <div id="categoriasShop">
         Filtrar Productos
         <select onChange={(e) => props.setCategoria(e.target.value)}>
-            <option name="default">Seleccionar</option>
+            <option name="default" value={"todos"}>Todos</option>
             {props.categorias.map(categoria => {
                 return(
                     <option  value={categoria} key={categoria} name={categoria}>{categoria}</option>

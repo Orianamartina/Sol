@@ -2,7 +2,6 @@ import Header from "./components/Header"
 import Banner from "./components/Banner"
 import Destacados from "./components/Destacados"
 import sampleImage from "../../public/sampleImage.jpeg"
-import Categorias from "./components/Categorias"
 
 import sampleImage2 from "../../public/sampleImage2.jpg"
 import one from "../../public/1.png"

@@ -45,8 +45,20 @@
     border: 1px solid black;
 }
 @media (max-width:800px){
-    #banner{
-        height: 100vh;
-        width: auto;
+    .banner2{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 200vh;
+        width: 90%;
+        margin-top: 10%;
+    }
+    .div1{
+        height: 50%;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .div2{
+        width: 100%;
+        height: 50%;
     }
 }
