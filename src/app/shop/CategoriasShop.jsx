@@ -10,7 +10,7 @@ function CategoriasShop(props) {
             <option name="default">Seleccionar</option>
             {props.categorias.map(categoria => {
                 return(
-                    <option  value={categoria} name={categoria}>{categoria}</option>
+                    <option  value={categoria} key={categoria} name={categoria}>{categoria}</option>
                 )
             })}
         </select>
