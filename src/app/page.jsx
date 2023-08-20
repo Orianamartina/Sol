@@ -16,13 +16,13 @@ import six from "../../public/6.png"
 
 const destacados = [
   {imagen: one,
-  titulo:"Top verde",
+  titulo:"ejemplo",
   precio: "$500"},
   {imagen: two,
-  titulo:"Coso blanco(?",
+  titulo:"ejemplo",
   precio: "$500"},
   {imagen: three,
-  titulo:"Mocasines bb",
+  titulo:"ejemplo",
   precio: "$500"},
   {imagen: four,
     titulo:"Destacado1",
@@ -50,9 +50,6 @@ image: sampleImage2},
 
 ]
 export default function home () {
-
-
-
     return(
         <>
             <Banner />

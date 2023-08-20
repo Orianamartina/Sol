@@ -6,9 +6,9 @@ import "./ProductSection.css"
 function ProductSection(props) {
   return (
     <div id="productSection">
-        {props.productos.map((p, index) => {
+        {props.productos && props.productos.map((p, index) => {
             return(
-                <div className="productCardProductSection" key={p.titulo}>
+                <div className="productCardProductSection" key={index}>
                     <TarjetaDeProducto producto={p} onClick={() => props.setSelectedProducto(p)} style={index%2===0?"even": "uneven"} />
                 </div>
             )

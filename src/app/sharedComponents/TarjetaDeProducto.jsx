@@ -8,7 +8,7 @@ function TarjetaDeProducto(props) {
     <>
         <div onClick={() => props.onClick(props.producto)} id="tarjetaDeProducto" className={props.style}>
             <div className="imageDiv">
-               <Image src={props.producto.imagen} />
+               <Image src={props.producto.imagen} alt={props.producto.titulo}/>
             </div>
            
 

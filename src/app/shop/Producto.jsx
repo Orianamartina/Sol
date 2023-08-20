@@ -7,7 +7,7 @@ function Producto(props) {
   return (
     <div id="producto">
         <div>
-             <Image className="productoDetalleImagen"src={props.producto.imagen} />
+             <Image className="productoDetalleImagen"src={props.producto.imagen} alt={props.producto.titulo} />
         </div>
        
         <div className="detalleContent">

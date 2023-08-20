@@ -4,7 +4,7 @@
     justify-content: space-evenly;
     width: 100%;
     background-color: black;
-    color: white;
+    color: black;
 }
  #header h1{
     font-size: small;
@@ -26,7 +26,7 @@
 }
 
 .separator{
-    width: 46%;
+    width: 43%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -34,7 +34,6 @@
 }
 .link{
     text-decoration: none;
-    color: var(--6);
     transition: all 0.3s;
 
     
@@ -43,6 +42,7 @@
     text-decoration: underline var(--6);
 }
 .link h1{
-    font-weight: lighter;
+    font-weight: light;
     font-size: smaller;
+    color: white;
 }

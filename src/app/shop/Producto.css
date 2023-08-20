@@ -10,7 +10,7 @@
     transition: all 1s;
 }
 #producto div{
-    background-color: var(--5);
+    background-color: whitesmoke;
 }
 .productoDetalleImagen{
      height: 90%;

@@ -5,15 +5,15 @@ import "./CategoriasShop.css"
 function CategoriasShop(props) {
   return (
     <div id="categoriasShop">
-        <ul>
+        Filtrar Productos
+        <select onChange={(e) => props.setCategoria(e.target.value)}>
+            <option name="default">Seleccionar</option>
             {props.categorias.map(categoria => {
                 return(
-                    <li key={categoria} onClick={() => props.setCategoria(categoria)}>
-                        {categoria}
-                    </li>
+                    <option  value={categoria} name={categoria}>{categoria}</option>
                 )
             })}
-        </ul>
+        </select>
     </div>
   )
 }

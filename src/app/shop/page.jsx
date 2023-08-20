@@ -1,5 +1,8 @@
 "use client"
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useDispatch, getState, useStore } from "react-redux";
+import { getProducts } from "../redux/redux";
+
 import CategoriasShop from "./CategoriasShop";
 import ProductSection from "./ProductSection";
 import sampleImage from "../../../public/sampleImage.jpeg"
@@ -16,6 +19,9 @@ const categorias = [
   "categoria1", "categoria2", "categoria3", "categoria4", "categoria5"
 ]
 
+
+
+export default function Shop() {
 const prods =[
   {imagen: one,
     titulo:"Destacado1",
@@ -55,21 +61,30 @@ const prods =[
       
 ]
 
-
-export default function Shop() {
-
-  const [categoria, setCategoria] = useState()
-
+  const [categoria, setCategoria] = useState("")
   const [productos, setProductos] = useState()
   const [selectedProducto, setSelectedProducto] = useState()
+  const dispatch = useDispatch()
+  const store = useStore()
+  useEffect(() => {
+    dispatch(getProducts(prods))
+    setProductos(prods)
+  },[])
+  
+ const filtrarProductos = (categoria) => {
+    const products = store.getState().redux.value.products
+    let productosFiltrados = products.filter(prod => prod.categoria == categoria)
+    setProductos(productosFiltrados)
+  
+  }
+
 
   return (
     <>
       {selectedProducto? <Producto producto={selectedProducto} close={() => setSelectedProducto(null)}/>: ""}
       <div className={selectedProducto? "blurry": "shopPage"}>
-        
-        <CategoriasShop categorias={categorias} setCategoria={setCategoria} />
-        <ProductSection productos={prods} setSelectedProducto={setSelectedProducto}/>
+        <CategoriasShop categorias={categorias} setCategoria={filtrarProductos} />
+        <ProductSection productos={productos} setSelectedProducto={setSelectedProducto}/>
       </div>
     
     </>

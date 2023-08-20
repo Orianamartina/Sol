@@ -32,14 +32,14 @@ function Header() {
          
             <div className="separator">
               <Link href="/" className="link" >
-                <h1>Como comprar</h1>
+                <h1>otra opcion</h1>
               </Link>
               
               <Link href="/"  className="link" >
                 <h1>Contacto</h1>
               </Link> 
                 <Link href="/"  className="link" >
-                <h1>Instagram</h1>
+                <h1>otra opcion</h1>
               </Link>
               
             </div>

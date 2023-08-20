@@ -1,7 +1,7 @@
 #productSection{
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 100%;
   flex-wrap: wrap;
   margin-top: 5%;
   border-top: 1px solid black;
@@ -23,7 +23,7 @@
         width: 90%;
     }
     .productCardProductSection{
-        width: 70%;
+        width: 100vw;
         margin: auto;
     }
 }

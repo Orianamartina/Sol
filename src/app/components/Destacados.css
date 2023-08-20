@@ -35,5 +35,11 @@
     .cardContainer{
         flex-direction: column;
         width: 90%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .tarjetaDeProductoContainer{
+        width: 100vw;
+    
     }
 }
