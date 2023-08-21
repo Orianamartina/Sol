@@ -1,6 +1,6 @@
 import TarjetaDeProducto from "../sharedComponents/TarjetaDeProducto"
 import "./ProductSection.css"
-
+import Link from "next/link"
 
 
 function ProductSection(props) {
@@ -8,8 +8,10 @@ function ProductSection(props) {
     <div id="productSection">
         {props.productos && props.productos.map((p, index) => {
             return(
-                <div className="productCardProductSection" key={index}>
-                    <TarjetaDeProducto producto={p} onClick={() => props.setSelectedProducto(p)} style={index%2===0?"even": "uneven"} />
+                <div className="productCardProductSection" key={index}> 
+                  <Link href={`/shop/${p.id}`}>
+                    <TarjetaDeProducto producto={p} style={index%2===0?"even": "uneven"} /> 
+                  </Link>
                 </div>
             )
         })}

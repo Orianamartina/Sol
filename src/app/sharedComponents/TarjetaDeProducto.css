@@ -32,10 +32,15 @@
 #tarjetaDeProducto h1{
     font-size: 1.2vw;
     font-weight:700;
+    color: black;
 }
 #tarjetaDeProducto h2 {
     font-size: 1vw;
+    color: black;
     
+}
+a{
+    text-decoration: none;
 }
 .even{
     background-color: var(--1);

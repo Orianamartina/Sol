@@ -6,17 +6,7 @@ import one from "../../../public/plant.jpg"
 function Banner() {
   return (
 
-
-    
-      
-
-
         <div className="banner2">
-              {/*<div id="banner">
-                        <h1>TEXTOOOO</h1>
-                        <h2>texto</h2>
-                        <Button class="white-green-border-black" text="Ver productos"/>
-                    </div>*/}
 
           <div className="div1">
               <Image className="image1" src={one} />

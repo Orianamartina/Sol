@@ -14,13 +14,17 @@ function Destacados(props) {
             {
                 props.destacados.map((prod, index) => {
                     return(
-                        <div key={prod.titulo} className="tarjetaDeProductoContainer">
-                            <TarjetaDeProducto 
-                            
-                            producto={prod}
-                            style={index%2===0? "even": "uneven"}
-                            />
-                        </div>
+                        
+                            <div key={prod.titulo} className="tarjetaDeProductoContainer">
+                                
+                                <TarjetaDeProducto 
+                                
+                                producto={prod}
+                                style={index%2===0? "even": "uneven"}
+                                />
+                
+                            </div>
+                        
                     )
                 })
             } 
