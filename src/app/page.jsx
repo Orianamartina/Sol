@@ -61,7 +61,7 @@ const prods =[
         
   ]
 
-export default function home () {
+export default function Home () {
     const dispatch = useDispatch()
     const [productos, setProductos] = useState([])
     const [destacados, setDestacados] = useState([])

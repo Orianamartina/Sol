@@ -1,5 +1,5 @@
 "use client"
-
+import "./page.css"
 import {useParams} from "next/navigation"
 import { useEffect, useState } from "react"
 import { useStore } from "react-redux"
