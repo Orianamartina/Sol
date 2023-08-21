@@ -1,6 +1,6 @@
 import  "./Button.css"
-
-
+import back from "../../../public/back.png"
+import Image from "next/image"
 
 
 
@@ -9,7 +9,8 @@ function Button(props) {
   return (
     <>
         <button className={props.class}>
-            <h1>{props.text}</h1>
+            {props.icon == "back" && <Image className="icon" alt="back" src={back}/>}
+            {props.text && <h1>{props.text}</h1>}
         </button>
     </>
   )

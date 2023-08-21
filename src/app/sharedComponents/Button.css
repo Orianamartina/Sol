@@ -12,6 +12,10 @@
     font-size: medium;
     font-weight: lighter;
 }
+.icon{
+    height: 3vw;
+    width: auto;
+}
 
 .white-green-border-black{
     border: 1px solid var(--1);
@@ -31,3 +35,16 @@
     font-size: medium;
     font-weight: lighter;
 }
+
+.pink-no-border{
+   border: none;
+   background-color: var(--1); 
+   cursor: pointer;
+   padding: 1%;
+}
+.pink-no-border h1{
+    font-size:medium;
+   font-weight: 100;
+   margin: 0;
+}
+

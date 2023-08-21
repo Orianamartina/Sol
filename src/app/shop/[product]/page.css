@@ -1,0 +1,40 @@
+#productDetail{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    height: 80vh;
+    padding: 5%;
+    
+}
+.productoDetalleImagen{
+    width: 100%;
+    height: auto;
+}
+.dataDiv{
+    width: 50%;
+    height: 100%;
+    padding-left: 5%;
+    padding-top: 3%;
+}
+.dataDiv h1{
+    margin: 0;
+}
+.dataDiv h3{
+    font-size: medium;
+    cursor: pointer;
+    margin: 0;
+}
+.imageDiv{
+    height: 100%;
+}
+.buttonBar{
+    display: flex;
+    direction: row;
+    justify-content: space-evenly;
+}
+@media (max-width:800px){
+    #productDetail{
+        flex-direction: column;
+    }
+}
