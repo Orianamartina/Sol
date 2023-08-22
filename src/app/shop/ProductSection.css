@@ -19,11 +19,12 @@
 @media (max-width:800px){
     
     #productSection{
-        flex-direction: column;
+
         width: 90%;
     }
     .productCardProductSection{
-        width: 100vw;
-        margin: auto;
+        width: 45vw;
+  
+      
     }
 }

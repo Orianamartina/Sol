@@ -60,4 +60,7 @@ a{
     #tarjetaDeProducto >h2 {
         font-size: 4.5vw;
     }
+    .imageDiv{
+        height: 20vh;
+    }
 }
