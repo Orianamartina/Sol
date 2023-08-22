@@ -37,6 +37,7 @@
         width: 90%;
         align-items: center;
         justify-content: space-evenly;
+        height: 180vh;
     }
     .tarjetaDeProductoContainer{
         width: 100vw;

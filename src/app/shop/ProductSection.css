@@ -20,11 +20,9 @@
     
     #productSection{
 
-        width: 90%;
+      width: 90%;
     }
     .productCardProductSection{
-        width: 45vw;
-  
-      
+      width: 45vw;
     }
 }

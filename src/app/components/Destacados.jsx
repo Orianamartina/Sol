@@ -16,9 +16,8 @@ function Destacados(props) {
                     return(
                         
                             <div key={prod.titulo} className="tarjetaDeProductoContainer">
-                                
+                            
                                 <TarjetaDeProducto 
-                                
                                 producto={prod}
                                 style={index%2===0? "even": "uneven"}
                                 />
