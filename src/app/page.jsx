@@ -1,4 +1,5 @@
 "use client"
+import "./globals.css"
 import Banner from "./components/Banner"
 import Destacados from "./components/Destacados"
 import sampleImage from "../../public/sampleImage.jpeg"
@@ -12,6 +13,7 @@ import five from "../../public/5.png"
 import six from "../../public/6.png"
 import { useEffect, useState } from "react"
 import { useDispatch } from "react-redux"
+import MainBanner from "./components/mainBanner"
 
 
 
@@ -73,7 +75,7 @@ export default function Home () {
       
     return(
         <>
-            <Banner />
+            <MainBanner />
             <Destacados destacados={destacados}  />
           {/*  <Categorias categorias={categorias}/>
             <MoreContent />

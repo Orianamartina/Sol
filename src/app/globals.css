@@ -1,21 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
 
-  --1: #ffbea6;
+  --1: #f78b64;
   --2:#ffb680;
   --3: #ffaab8;
   --4: #ffb63e;
   --5: #d2f5a1;
   --6: rgb(237, 211, 113);
   --7: #eaf9a8;
-  --font:'Montserrat', sans-serif;
+  /*--font:'Montserrat', sans-serif;*/
+  --font:'Merienda', cursive
 }
 
+
+
+@font-face {
+  font-family: "blackMango";
+  src: url("../../TTF/BlackMango-Black.ttf") format("truetype") ;
+  font-weight: normal;
+}
 
 body{
   width: 100%;
   margin: 0;
   font-family: var(--font);
+
 }

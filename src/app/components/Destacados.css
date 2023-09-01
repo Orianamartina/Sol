@@ -34,10 +34,11 @@
 @media (max-width:800px){
     .cardContainer{
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         align-items: center;
         justify-content: space-evenly;
-        height: 180vh;
+        height: 400vh;
+        margin-right: 0;
     }
     .tarjetaDeProductoContainer{
         width: 100vw;

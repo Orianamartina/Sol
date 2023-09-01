@@ -1,14 +1,4 @@
-#banner{
-    max-width: 100vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20%;
-    background-size: cover;
-    color: black;
-    background-color: whitesmoke;
-}
+
 .banner2{
     width: 50%;
     display: block;
@@ -27,7 +17,7 @@
 }
 .div2{
     height: 100%;
-    width: 40%;
+    width: 43%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -37,12 +27,18 @@
     width: 100%;
     object-fit: cover;
     border: 1px solid black;
+    transition: 0.5s;
 }
 .image2{
     height: 49%;
     width: 100%;
     object-fit: cover;
     border: 1px solid black;
+    transition: 0.5s;
+}
+.image1:hover, .image2:hover{
+    cursor: pointer;
+    transform: scale(110%);
 }
 @media (max-width:800px){
     .banner2{

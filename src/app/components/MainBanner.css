@@ -1,0 +1,9 @@
+#mainBanner{
+    background-image: url("../../Images/ee20fd45-85f9-409a-b1df-1a1972f19fb4.jfif");
+    height: 100%;
+    background-size: cover;
+}
+#mainBanner h1{
+    color: black;
+    font-size: x-large;
+}
