@@ -11,7 +11,7 @@ function Header() {
   return (
 
     <>
-        <div id="header">
+        <div id="header1">
           <div className="separator">
             <Link href="/" className="link" >
               <h1>Home</h1>
@@ -45,7 +45,32 @@ function Header() {
             </div>
             
         </div>
-    
+        <div id="header2">
+            <Link href="/" className="logoLink">
+                <Image src={logo}  className="logo"/> 
+            </Link>
+          <div className="separator">
+            <Link href="/" className="link" >
+              <h1>Home</h1>
+            </Link>
+            <Link href="/shop" className="link" >
+                <h1>Shop</h1>
+            </Link>
+            <Link href="/" className="link" >
+              <h1>Como comprar</h1>
+            </Link>
+            <Link href="/" className="link" >
+              <h1>otra opcion</h1>
+            </Link>
+                
+            <Link href="/"  className="link" >
+              <h1>Contacto</h1>
+            </Link> 
+              <Link href="/"  className="link" >
+              <h1>otra opcion</h1>
+            </Link>
+            </div>
+        </div>    
     </>
   
   )
