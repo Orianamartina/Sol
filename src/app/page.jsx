@@ -13,7 +13,7 @@ import five from "../../public/5.png"
 import six from "../../public/6.png"
 import { useEffect, useState } from "react"
 import { useDispatch } from "react-redux"
-import MainBanner from "./components/mainBanner"
+import MainBanner from "./components/MainBanner"
 
 
 
