@@ -5,6 +5,7 @@
     margin: auto;
     height: 80vh;
     padding: 5%;
+    font-family: var(--font2);
     
 }
 .productoDetalleImagen{

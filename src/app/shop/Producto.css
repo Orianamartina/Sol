@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: row;
     transition: all 1s;
+
 }
 #producto div{
     background-color: whitesmoke;

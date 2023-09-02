@@ -8,7 +8,7 @@ function Destacados(props) {
   return (
     <>
         <div id="destacados">
-            <h1 className="destacadosTitle">Galeria</h1>
+            <h1 className="destacadosTitle">Destacados</h1>
             <h2 className="destacadosDescripcion">texto mucho texto aca va texto </h2>
             <div className="cardContainer">
             {

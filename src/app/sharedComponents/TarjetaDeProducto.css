@@ -5,16 +5,12 @@
     text-align: center;
     cursor: pointer;
     padding-bottom: 2%;
+    font-family: var(--font2);
 }
 .imageDiv{
     overflow: hidden;
     height: 43vh;
     
-}
-
-#tarjetaDeProducto:hover{
-
-
 }
 
 
@@ -43,7 +39,7 @@ a{
     text-decoration: none;
 }
 .even{
-    background-color: var(--1);
+    background-color: var(--3);
 }
 .uneven{
     background-color: whitesmoke;
@@ -55,11 +51,14 @@ a{
     }
 
     #tarjetaDeProducto h1{
-        font-size: 5vw;
+        font-size: 4vw;
         font-weight: 400;
+        margin: 0;
     }
     #tarjetaDeProducto >h2 {
-        font-size: 4.5vw;
+        font-size: 3.5vw;
+        margin: 0;
+        margin-bottom: 2%;
     }
     .imageDiv{
         height: 20%;
