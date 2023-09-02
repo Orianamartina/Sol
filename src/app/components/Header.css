@@ -75,8 +75,8 @@
     }
     .hidden{
         filter: opacity(0);
-        transition-delay: 0.6s;
-        
+        transition-delay: 0.7s;
+        transform: translateY(-100%);
 
     }    
     .show{
