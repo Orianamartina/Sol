@@ -46,42 +46,36 @@ function Header() {
             
         </div>
         <div id="header2">
-            <h1 className="closedMenuDots"  onClick={() => setOpenMenu(!openMenu)}>{openMenu? "X": "..."}</h1>
-            <div className={openMenu?"openMenu": "hidden"}>
-              
+
+              <h1 className="menuDots"  onClick={() => setOpenMenu(!openMenu)}>{openMenu? "X": "..."}</h1>
               <Link href="/" className="logoLink" >
                   <Image src={logo}  className="logo"/> 
               </Link>
-              <div className="separator">
-                <Link href="/" className="link"  >
+
+              <div className={openMenu?"separator":"separator hidden"}>
+                <Link href="/" className={openMenu? "link show": "link delay-6"}  >
                   <h1  onClick={() => setOpenMenu(!openMenu)}>Home</h1>
                 </Link>
-                <Link href="/shop" className="link"  >
+                <Link href="/shop" className={openMenu? "link show": "link delay-5"}  >
                     <h1 onClick={() => setOpenMenu(!openMenu)}>Shop</h1>
                 </Link>
-                <Link href="/" className="link"  >
+                <Link href="/" className={openMenu? "link show": "link delay-4"}   >
                   <h1 onClick={() => setOpenMenu(!openMenu)}>Como comprar</h1>
                 </Link>
-                <Link href="/" className="link"  >
+                <Link href="/" className={openMenu? "link show": "link delay-3"}   >
                   <h1 onClick={() => setOpenMenu(!openMenu)}>otra opcion</h1>
                 </Link>
                     
-                <Link href="/"  className="link"  >
+                <Link href="/"  className={openMenu? "link show": "link delay-2"}   >
                   <h1 onClick={() => setOpenMenu(!openMenu)}>Contacto</h1>
                 </Link> 
-                  <Link href="/"  className="link"  >
+                  <Link href="/"  className={openMenu? "link show": "link delay-1"}  >
                   <h1 onClick={() => setOpenMenu(!openMenu)}>otra opcion</h1>
                 </Link>
               </div>
             </div>
-              <div className={openMenu? "hidden":"closedMenu"}>
-                  
-                  <Link href="/" className="logoLink">
-                    <Image src={logo}  className="logo"/> 
-                  </Link>
-              </div>
             
-        </div>    
+  
     </>
   
   )

@@ -48,23 +48,20 @@
 }
 #header2{
     display: none;
+    transition:all 0.5s;
 }
 @media (max-width: 800px){
     #header1{
         display: none
     }
     #header2{
+        height: fit-content;
         display: flex;
         background-color: black;
 
 
     }
-    .openMenu{
-        display: flex;
-        margin: auto;
-        width: 100%;
 
-    }
     .separator{
         position: absolute;
         display: flex;
@@ -73,24 +70,59 @@
         background-color: black;
         transition: all 0.5s;
         top: 7%;
-
+        filter: opacity(100);
+        height: fit-content;
 
     }
     .hidden{
-        display: none;
-        transition: all 0.5s;
+        transform: translateY(-100%);
+        filter: opacity(0);
+        transition-delay: 0.6s;
+        
+
     }
+    .delay-1{
+        filter: opacity(0);
+        transition: all 0.05s;
+        transition-delay: 0.1s;
+    }
+    .delay-2{
+        filter: opacity(0);
+        transition: all 0.05s;
+        transition-delay: 0.2s;
+    }
+    .delay-3{
+        filter: opacity(0);
+        transition: all 0.05s;
+        transition-delay: 0.3s;
+    }
+
+    .delay-4{
+        filter: opacity(0);
+        transition: all 0.05s;
+        transition-delay: 0.4s;
+    }
+
+    .delay-5{
+        filter: opacity(0);
+        transition: all 0.05s;
+        transition-delay: 0.5s;
+    }
+    
+    .delay-6{
+        filter: opacity(0);
+        transition: all 0.05s;
+        transition-delay: 0.6s;
+    }
+
+
+    
     .logoLink{
         width: 20%;
         align-items: center;
         margin: auto;
     }
-    .closedMenu{
-        color: white;
-        display: flex;
-        width: 100%;
-    }
-    .closedMenuDots{
+    .menuDots{
         position: absolute;
         z-index: 2000;
         color: white;
@@ -99,6 +131,9 @@
         top: 2%;
         margin: 0;
         transition: all 0.5s;
+    }
+    .show{
+        filter: opacity(100);
     }
     .link{
         margin: 2%;
