@@ -47,4 +47,10 @@
    font-weight: 100;
    margin: 0;
 }
+@media (max-width:800px){
+    .icon{
+        width: 6vw;
+        height: auto;
+    }
+}
 

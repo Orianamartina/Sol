@@ -37,5 +37,16 @@
 @media (max-width:800px){
     #productDetail{
         flex-direction: column;
+
+    }
+    .dataDiv{
+        width: 100%;
+        height: fit-content;
+    }
+    .imageDiv{
+        height: fit-content;
+    }
+    .dataDiv p{
+        margin-bottom: 10%;
     }
 }
