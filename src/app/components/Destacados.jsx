@@ -9,7 +9,7 @@ function Destacados(props) {
     <>
         <div id="destacados">
             <h1 className="destacadosTitle">Destacados</h1>
-            <h2 className="destacadosDescripcion">texto mucho texto aca va texto </h2>
+           {/* <h2 className="destacadosDescripcion">texto mucho texto aca va texto </h2>*/}
             <div className="cardContainer">
             {
                 props.destacados.map((prod, index) => {

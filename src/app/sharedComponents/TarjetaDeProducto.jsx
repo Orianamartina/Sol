@@ -7,7 +7,7 @@ function TarjetaDeProducto(props) {
   return (
     <> 
       <Link href={`/shop/${props.producto.id}`} >
-        <div id="tarjetaDeProducto" className={props.style}>
+        <div id="tarjetaDeProducto">
          
             <div className="imageDiv">
                <Image src={props.producto.imagen} alt={props.producto.titulo}/>

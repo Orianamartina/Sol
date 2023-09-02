@@ -10,5 +10,6 @@
 @media (max-width:800px){
     #mainBanner{
         background-image: url("../../Images/backgroundmobile.jpg");
+        background-size: contain;
     }
 }
