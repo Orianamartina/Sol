@@ -17,12 +17,12 @@ function CategoriasShop(props) {
               let options = Object.entries(categoria)
               return(
                 <div>
-                  <h2 className={openSelect?"boldOptions openSelectOptions":"closedOptions"} onClick={() => {props.setCategoria(options[0][0]) ;setCurrentSelection(options[0][0]); setOpenSelect(!openSelect)}}>
+                  <h2 key={options[0][0]}className={openSelect?"boldOptions openSelectOptions":"closedOptions"} onClick={() => {props.setCategoria(options[0][0]) ;setCurrentSelection(options[0][0]); setOpenSelect(!openSelect)}}>
                     {options[0][0]}
                   </h2>
                   {options[0][1].map(opt => {
                     return(
-                      <h3 className={openSelect?"openSelectOptions":"closedOptions"} onClick={() => {props.setCategoria(opt); setCurrentSelection(opt); setOpenSelect(!openSelect)}}>
+                      <h3 key={opt} className={openSelect?"openSelectOptions":"closedOptions"} onClick={() => {props.setCategoria(opt); setCurrentSelection(opt); setOpenSelect(!openSelect)}}>
                         {opt}
                       </h3>
                     )
