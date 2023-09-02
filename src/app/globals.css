@@ -13,8 +13,37 @@
   /*--font:'Montserrat', sans-serif;*/
   --font:'Merienda', cursive
 }
+select{
+    background-color: var(--5);
+    border: none;
+    font-family: var(--font);
+    font-size:medium;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid black;
 
+}
+select:focus{
+  border: none;
+}
+select:active{
+  border: none;
+}
 
+select:hover{
+
+}
+option {
+  border: 1px solid black;
+}
+
+option:checked{
+  background-color: var(--3);
+}
+option:focus{
+  background-color: var(--3);
+}
 
 @font-face {
   font-family: "blackMango";
