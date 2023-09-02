@@ -67,9 +67,9 @@ const categorias = [
 export default function Shop() {
 
 
-  const [categoria, setCategoria] = useState("")
+
   const [productos, setProductos] = useState()
-  const [selectedProducto, setSelectedProducto] = useState()
+
   const dispatch = useDispatch()
   const store = useStore()
   useEffect(() => {
@@ -85,6 +85,7 @@ export default function Shop() {
   
  const filtrarProductos = (categoria) => {
     const products = store.getState().redux.value.products
+    console.log(categoria)
     if (categoria == "todos"){
       setProductos(products)
     }
@@ -101,7 +102,7 @@ export default function Shop() {
     <>
       <div className={"shopPage"}>
         <CategoriasShop categorias={categorias} setCategoria={filtrarProductos} />
-        <ProductSection productos={productos} setSelectedProducto={setSelectedProducto}/>
+        <ProductSection productos={productos}/>
       </div>
     
     </>

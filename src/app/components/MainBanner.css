@@ -7,3 +7,8 @@
     color: black;
     font-size: x-large;
 }
+@media (max-width:800px){
+    #mainBanner{
+        background-image: url("../../Images/backgroundmobile.jpg");
+    }
+}
