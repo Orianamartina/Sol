@@ -99,7 +99,7 @@ export default function Shop() {
 
   return (
     <>
-      <div className={selectedProducto? "blurry": "shopPage"}>
+      <div className={"shopPage"}>
         <CategoriasShop categorias={categorias} setCategoria={filtrarProductos} />
         <ProductSection productos={productos} setSelectedProducto={setSelectedProducto}/>
       </div>
