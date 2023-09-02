@@ -75,7 +75,7 @@
     }
     .hidden{
         filter: opacity(0);
-        transition-delay: 0.7s;
+        transition-delay: 0.8s;
         transform: translateY(-100%);
 
     }    
@@ -86,32 +86,33 @@
     .opac0{
         filter: opacity(0);
         background-color: transparent;
+        transition: all 1s;
     }
     .delay-1{
-        transition: all 0.05s;
+        transition: all 0.8s;
         transition-delay: 0.1s;
     }
     .delay-2{
-        transition: all 0.05s;
+        transition: all 0.8s;
         transition-delay: 0.2s;
     }
     .delay-3{
-        transition: all 0.05s;
+        transition: all 0.8s;
         transition-delay: 0.3s;
     }
 
     .delay-4{
-        transition: all 0.05s;
+        transition: all 0.8s;
         transition-delay: 0.4s;
     }
 
     .delay-5{
-        transition: all 0.05s;
+        transition: all 0.8s;
         transition-delay: 0.5s;
     }
     
     .delay-6{
-        transition: all 0.05s;
+        transition: all 0.8s;
         transition-delay: 0.6s;
     }
 
