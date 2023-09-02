@@ -16,7 +16,7 @@ function CategoriasShop(props) {
             {props.categorias.map((categoria) =>{
               let options = Object.entries(categoria)
               return(
-                <div>
+                <div key={options[0][0]}>
                   <h2 key={options[0][0]}className={openSelect?"boldOptions openSelectOptions":"closedOptions"} onClick={() => {props.setCategoria(options[0][0]) ;setCurrentSelection(options[0][0]); setOpenSelect(!openSelect)}}>
                     {options[0][0]}
                   </h2>
