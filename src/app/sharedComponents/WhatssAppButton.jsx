@@ -5,7 +5,7 @@ import React from 'react'
 
 function WhatssAppButton() {
   return (
-    <div>
+    <div className='wpButtonContainer'>
         <Image src={wp} className='wpbutton' alt='WhatsApp'/>
     </div>
   )

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kavivanar&display=swap');
 :root {
 
   --1: #f78b64;
@@ -11,7 +12,9 @@
   --6: rgb(237, 211, 113);
   --7: #eaf9a8;
   --font2:'Montserrat', sans-serif;
-  --font:'Merienda', cursive
+  /*--font:'Merienda', cursive*/
+  --font:'Kavivanar', cursive;
+  
 }
 select{
     background-color: var(--5);

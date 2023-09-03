@@ -3,8 +3,8 @@
     position: fixed;
     width: 5vw;
     height: 5vw;
-    top: 85%;
-    left: 92%;
+    bottom: 3%;
+    right: 3%;
     cursor: pointer;
 
 }
@@ -12,7 +12,6 @@
     .wpbutton{
         width: 10vw;
         height: 10vw;
-        left: 80%;
-        top: 84%;
+        right: 5%;
     }
 }
