@@ -20,7 +20,7 @@ function CategoriasShop(props) {
   }
   
   return (
-    <div id="categoriasShop">
+    <div className={openSelect? "categoriasShop openCat":"categoriasShop"}>
         <h1>Filtrar Productos</h1>
         <div className="selectMain" >
           <div className="filter">
@@ -37,7 +37,7 @@ function CategoriasShop(props) {
                     if (openSelect == options[0][0]){
                       return(
                         <>
-                          <h3 key={opt} className={openSelect?"openSelectOptions":"closedOptions"} onClick={() => chooseCategory(opt, options[0][0])}>
+                          <h3 key={opt} className="selectOptions" onClick={() => chooseCategory(opt, options[0][0])}>
                             {opt}
                           </h3>
                         </>

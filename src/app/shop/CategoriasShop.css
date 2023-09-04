@@ -1,23 +1,28 @@
 
 
-#categoriasShop{
+.categoriasShop{
     max-width: 100%;
     font-size: small;
     background-image: url("../../Images/ee20fd45-85f9-409a-b1df-1a1972f19fb4.jfif");
     background-size: cover;
     margin-top: 0;
     padding: 5%;
+    height: 10vh;
+    transition: all 0.3s;
+}
+.openCat{
+    height: 20vh;
 }
 
-#categoriasShop h1{
+.categoriasShop h1{
     letter-spacing: 1px;
     font-size: medium;
     display: inline;
 }
-#categoriasShop h3{
+.categoriasShop h3{
     margin: 0;
 }
-#categoriasShop h2{
+.categoriasShop h2{
     margin: 0;
 }
 .filter{
@@ -39,10 +44,13 @@
     
 }
 
-#categoriasShop button{
+.categoriasShop button{
     background-color: transparent;
     border: none;
     height: fit-content;
     display: flex;
     align-items: center;
+}
+.selectOptions{
+    font-size: 0.8rem;
 }
