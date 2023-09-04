@@ -1,31 +1,50 @@
 import { useState, useEffect } from "react"
 import "./CategoriasShop.css"
-
+import Image from "next/image"
+import arrow from "../../../public/down-arrow.png"
 
 
 function CategoriasShop(props) {
   const [openSelect, setOpenSelect] = useState()
-  const [currentSelection, setCurrentSelection] = useState()
+  const changeButtonState = (state) => {
+    openSelect == state? setOpenSelect(false): setOpenSelect(state)
+  }
+  const chooseCategory = (cat, opt) => {
+    if (cat == "Todos"){
+      props.setCategoria(opt)
+    }
+    else{
+      props.setCategoria(cat)
+    }
+    
+  }
+  
   return (
     <div id="categoriasShop">
         <h1>Filtrar Productos</h1>
         <div className="selectMain" >
-          <h1 onClick={() =>{setOpenSelect(!openSelect)}}>Seleccionar Categoria</h1>
-          <div className={openSelect? "selectOptions showSelect": "selectOptions hideSelect"}>
-            <h3 className={openSelect?"openSelectOptions":"closedOptions"} onClick={() => {props.setCategoria("todos");setCurrentSelection(false); setOpenSelect(!openSelect)}}>Todos</h3>
+          <div className="filter">
+            <button onClick={() => {props.setCategoria("Todos");changeButtonState("Todos")}}>Todos</button>
             {props.categorias.map((categoria) =>{
               let options = Object.entries(categoria)
               return(
                 <div key={options[0][0]}>
-                  <h2 key={options[0][0]}className={openSelect?"boldOptions openSelectOptions":"closedOptions"} onClick={() => {props.setCategoria(options[0][0]) ;setCurrentSelection(options[0][0]); setOpenSelect(!openSelect)}}>
+                  <button onClick={() => changeButtonState(options[0][0])}>
                     {options[0][0]}
-                  </h2>
-                  {options[0][1].map(opt => {
-                    return(
-                      <h3 key={opt} className={openSelect?"openSelectOptions":"closedOptions"} onClick={() => {props.setCategoria(opt); setCurrentSelection(opt); setOpenSelect(!openSelect)}}>
-                        {opt}
-                      </h3>
-                    )
+                    <Image className={openSelect != options[0][0]?`arrowIconOpen`:"arrowIcon"}src={arrow} alt=""/>
+                  </button>
+                  { options[0][1].map(opt => {
+                    if (openSelect == options[0][0]){
+                      return(
+                        <>
+                          <h3 key={opt} className={openSelect?"openSelectOptions":"closedOptions"} onClick={() => chooseCategory(opt, options[0][0])}>
+                            {opt}
+                          </h3>
+                        </>
+                      )
+                    }
+          
+
                   })}
                 </div>
                 
@@ -33,7 +52,7 @@ function CategoriasShop(props) {
             })}
           </div>
       </div>
-      <h1>{currentSelection? currentSelection: "Todos"}</h1>
+
     </div>
   )
 }

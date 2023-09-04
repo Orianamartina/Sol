@@ -17,49 +17,49 @@ const prods =[
   {imagen: one,
     id: 1,
     titulo:"Destacado1",
-    categoria: "categoria1",
+    categoria: ["Ropa", "Sweaters"],
     descripcion:"hola buenas tardes como te va esto es un texto para tener de ejemplo en la descripcion del articulo",
     precio: "$500"},
     {imagen: two,
       id: 2,
     titulo:"Destacado1",
-    categoria: "categoria1",
+    categoria:["Ropa", "Sacos"],
     descripcion:"hola buenas tardes como te va esto es un texto para tener de ejemplo en la descripcion del articulo",
     precio: "$500"},
     {imagen: three,
       id: 3,
     titulo:"Destacado1",
-    categoria: "categoria2",
+    categoria: ["Accesorios", "Pantumedias"],
     descripcion:"hola buenas tardes como te va esto es un texto para tener de ejemplo en la descripcion del articulo",
     precio: "$500"},
     {imagen: four,
       id: 4,
       titulo:"Destacado1",
-      categoria: "categoria2",
+      categoria: ["Accesorios", "Cuellos Infinitos"],
       descripcion:"hola buenas tardes como te va esto es un texto para tener de ejemplo en la descripcion del articulo",
       precio: "$500"},
       {imagen: five,
         id:5,
       titulo:"Destacado1",
-      categoria: "categoria3",
+      categoria: ["Ropa", "Tops"],
       descripcion:"hola buenas tardes como te va esto es un texto para tener de ejemplo en la descripcion del articulo",
       precio: "$500"},
       {imagen: six,
         id: 6,
       titulo:"Destacado1",
-      categoria: "categoria4",
+      categoria: ["Ropa", "Tops"],
       descripcion:"hola buenas tardes como te va esto es un texto para tener de ejemplo en la descripcion del articulo",
       precio: "$500"},
       {imagen: sampleImage,
         id: 7,
         titulo:"Destacado1",
-        categoria: "categoria5",
+        categoria: ["Accesorios", "Bufandas"],
         descripcion:"hola buenas tardes como te va esto es un texto para tener de ejemplo en la descripcion del articulo",
         precio: "$500"},
       
 ]
 const categorias = [
-  {Ropa:["Sweaters", "Sacos", "Tops"]}, {Accesorios:["Pantumedias", "Bufandas", "Cuellos Infinitos"]}
+  {Ropa:["Todos", "Sweaters", "Sacos", "Tops"]}, {Accesorios:["Todos", "Pantumedias", "Bufandas", "Cuellos Infinitos"]}
 ]
 
 
@@ -69,6 +69,7 @@ export default function Shop() {
 
 
   const [productos, setProductos] = useState()
+  const [categoria, setCategoria] = useState("")
 
   const dispatch = useDispatch()
   const store = useStore()
@@ -85,23 +86,24 @@ export default function Shop() {
   
  const filtrarProductos = (categoria) => {
     const products = store.getState().redux.value.products
-    console.log(categoria)
-    if (categoria == "todos"){
+    if (categoria == "Todos"){
       setProductos(products)
     }
     else{
-      let productosFiltrados = products.filter(prod => prod.categoria == categoria)
+      let productosFiltrados = products.filter(prod => prod.categoria.includes(categoria))
       setProductos(productosFiltrados)
     }
     
-  
+    setCategoria(categoria)
   }
 
 
   return (
     <>
       <div className={"shopPage"}>
+        
         <CategoriasShop categorias={categorias} setCategoria={filtrarProductos} />
+        <h3>{categoria}</h3>
         <ProductSection productos={productos}/>
       </div>
     
