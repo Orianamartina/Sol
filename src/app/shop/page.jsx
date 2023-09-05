@@ -81,6 +81,7 @@ export default function Shop() {
       dispatch(getProducts(prods))
       setProductos(prods)
     }
+    setCategoria("Todos")
     
   },[])
   
@@ -103,7 +104,7 @@ export default function Shop() {
       <div className={"shopPage"}>
         
         <CategoriasShop categorias={categorias} setCategoria={filtrarProductos} />
-        <h3>{categoria}</h3>
+        <h3 className="categoryTitle">{categoria == "Todos"? "Todos los productos": categoria}</h3>
         <ProductSection productos={productos}/>
       </div>
     

@@ -1,6 +1,6 @@
 #destacados{
     width: 100%;
-    margin-top: 7%;
+
     text-align: center;
     margin-bottom: 7vh;
     cursor: pointer;
@@ -14,8 +14,7 @@
     align-items: center;
     justify-content:    space-evenly;
     margin-bottom: 7vh;
-    padding-bottom: 5vh;
-    padding-top: 5vh;
+
 
     
 }
@@ -37,12 +36,17 @@
         width: 100%;
         align-items: center;
         justify-content: space-evenly;
-        
+        padding: 0%;
         margin-right: 0;
+        margin-bottom: 2%;
+
     }
     .tarjetaDeProductoContainer{
         width: 45vw;
         margin-bottom: 10%;
     
+    }
+    .destacadosTitle{
+        font-size: 1.8rem;
     }
 }

@@ -16,15 +16,17 @@ function CategoriasShop(props) {
     else{
       props.setCategoria(cat)
     }
+    setOpenSelect(false)
     
   }
   
   return (
     <div className={openSelect? "categoriasShop openCat":"categoriasShop"}>
-        <h1>Filtrar Productos</h1>
+        
         <div className="selectMain" >
           <div className="filter">
-            <button onClick={() => {props.setCategoria("Todos");changeButtonState("Todos")}}>Todos</button>
+            <button>Filtros:</button>
+            <button onClick={() => {props.setCategoria("Todos");openSelect && setOpenSelect(false)}}>Todos los productos</button>
             {props.categorias.map((categoria) =>{
               let options = Object.entries(categoria)
               return(

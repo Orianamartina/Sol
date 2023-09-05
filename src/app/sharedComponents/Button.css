@@ -19,7 +19,6 @@
 
 .white-green-border-black{
     border: 1px solid var(--1);
-  
     background-color: white;
     padding: 1%;
     cursor: pointer;
@@ -32,7 +31,7 @@
 
 }
 .white-green-border-black h1 {
-    font-size: medium;
+    font-size: 0.8rem;
     font-weight: lighter;
 }
 

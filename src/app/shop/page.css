@@ -8,6 +8,13 @@
     transition: all 0.5s;
 
 }
+.categoryTitle{
+    text-align: center;
+    background-image: url("../../Images/ee20fd45-85f9-409a-b1df-1a1972f19fb4.jfif");
+    background-size: cover;
+    margin: 0;
+    margin-top: 2%;
+}
 .blurry{
     display: flex;
     flex-direction: column;
