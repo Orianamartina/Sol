@@ -25,13 +25,15 @@ export default function ProductDetail() {
           
           {data &&
           <>
-            <div className="imageDiv">
+            <div className="productImageDiv">
               <Link href={"/shop"}>
                 <Button class="white-no-border" icon="back"/>
               </Link>
-              
-              <Image className="productoDetalleImagen"src={data.imagen} alt={data.titulo} />
+              <div className="productImageContainer">
+                <Image className="productoDetalleImagen"src={data.imagen} alt={data.titulo} />
               </div>
+              
+            </div>
               <div className="dataDiv">
                 <p>{data.categoria}</p>
                 <h1>{data.titulo}</h1>
@@ -41,7 +43,9 @@ export default function ProductDetail() {
                 <div className="buttonBar">
                   <Button text="Como comprar?" class="pink-no-border" />
                   <Button text="Guia de talles" class="pink-no-border" />
+                 
                 </div>
+                  <Button text="Agregar al carrito" class="white-green-border-black" />
                
               </div>
           </>

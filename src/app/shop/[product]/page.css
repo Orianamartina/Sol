@@ -3,10 +3,17 @@
     display: flex;
     flex-direction: row;
     margin: auto;
-    height: 80vh;
+
     padding: 5%;
     font-family: var(--font2);
     
+}
+.productImageDiv{
+    height: 100%;
+}
+.productImageContainer{
+    width: 100%;
+    height: 100%;
 }
 .productoDetalleImagen{
     width: 100%;
@@ -25,9 +32,6 @@
     font-size: medium;
     cursor: pointer;
     margin: 0;
-}
-.imageDiv{
-    height: 100%;
 }
 .buttonBar{
     display: flex;

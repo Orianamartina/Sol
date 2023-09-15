@@ -83,8 +83,8 @@
         position: absolute;
         top: 100%;
         background-color: white;
-        max-width: 82vw;
-        height: 80vh;
+        max-width: 81.3vw;
+        height: 90vh;
         justify-content: flex-start;
         text-align: center;
         padding: 10%;
@@ -92,10 +92,15 @@
     }
     .closedFilter{
         position: absolute;
-        transform: translateX(-100%);
+        transform: translateX(-120%);
         transition: all 1s;
+        top: 100%;
+        background-color: white;
         max-width: 82vw;
         height: 80vh;
+        justify-content: flex-start;
+        text-align: center;
+        padding: 10%;
     }
     
     .closefilterButton{

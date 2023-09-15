@@ -18,11 +18,12 @@
 }
 
 .white-green-border-black{
-    border: 1px solid var(--1);
     background-color: white;
     padding: 1%;
     cursor: pointer;
     transition: all 0.4s;
+    border: 1px solid black;
+    border-radius: 50px;
 }
 .white-green-border-black:hover{
 

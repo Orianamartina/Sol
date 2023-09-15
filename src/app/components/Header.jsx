@@ -14,13 +14,13 @@ function Header() {
         <div id="header1">
           <div className="separator">
             <Link href="/" className="link" >
-              <h1>Home</h1>
+              <h1>HOME</h1>
             </Link>
             <Link href="/shop" className="link" >
-                <h1>Shop</h1>
+                <h1>SHOP</h1>
             </Link>
               <Link href="/" className="link" >
-                <h1>Como comprar</h1>
+                <h1>COMO COMPRAR</h1>
               </Link>
               
 
@@ -32,14 +32,14 @@ function Header() {
          
             <div className="separator">
               <Link href="/" className="link" >
-                <h1>otra opcion</h1>
+                <h1>OPCION</h1>
               </Link>
               
               <Link href="/"  className="link" >
-                <h1>Contacto</h1>
+                <h1>CONTACTO</h1>
               </Link> 
                 <Link href="/"  className="link" >
-                <h1>otra opcion</h1>
+                <h1>OPCION</h1>
               </Link>
               
             </div>
@@ -54,23 +54,23 @@ function Header() {
 
               <div className={openMenu?"separator":"separator hidden"}>
                 <Link href="/" className={openMenu? "link show delay-1": "link opac0 delay-6"}  >
-                  <h1  onClick={() => setOpenMenu(!openMenu)}>Home</h1>
+                  <h1  onClick={() => setOpenMenu(!openMenu)}>HOME</h1>
                 </Link>
                 <Link href="/shop" className={openMenu? "link show delay-2": "link opac0 delay-5"}  >
-                    <h1 onClick={() => setOpenMenu(!openMenu)}>Shop</h1>
+                    <h1 onClick={() => setOpenMenu(!openMenu)}>SHOP</h1>
                 </Link>
                 <Link href="/" className={openMenu? "link show delay-3": "link opac0 delay-4"}   >
-                  <h1 onClick={() => setOpenMenu(!openMenu)}>Como comprar</h1>
+                  <h1 onClick={() => setOpenMenu(!openMenu)}>COMO COMPRAR</h1>
                 </Link>
                 <Link href="/" className={openMenu? "link show delay-4": "link opac0 delay-3"}   >
-                  <h1 onClick={() => setOpenMenu(!openMenu)}>otra opcion</h1>
+                  <h1 onClick={() => setOpenMenu(!openMenu)}>OPCION</h1>
                 </Link>
                     
                 <Link href="/"  className={openMenu? "link show delay-5": "link opac0 delay-2"}   >
-                  <h1 onClick={() => setOpenMenu(!openMenu)}>Contacto</h1>
+                  <h1 onClick={() => setOpenMenu(!openMenu)}>CONTACTO</h1>
                 </Link> 
                   <Link href="/"  className={openMenu? "link show delay-6": "link opac0 delay-1"}  >
-                  <h1 onClick={() => setOpenMenu(!openMenu)}>otra opcion</h1>
+                  <h1 onClick={() => setOpenMenu(!openMenu)}>OPCION</h1>
                 </Link>
               </div>
             </div>
