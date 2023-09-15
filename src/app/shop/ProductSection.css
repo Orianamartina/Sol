@@ -7,6 +7,9 @@
   padding-top: 5%;
   margin: auto;
   justify-content: space-evenly;
+  height: 75vh;
+  overflow-y: scroll;
+  
   
 }
 .productCardProductSection{

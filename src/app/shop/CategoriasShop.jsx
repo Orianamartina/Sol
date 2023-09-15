@@ -18,14 +18,15 @@ function CategoriasShop(props) {
       props.setCategoria(cat)
     }
     setOpenSelect(false)
+    setOpenFilter(false)
     
   }
   
   return (
     <div className="categoriasShop">
-          <h2 className="openFilterButton" onClick={() => setOpenFilter(!openFilter)}>Filtros</h2> <Image className={openFilter?`arrowIconOpen`:"arrowIcon"}src={arrow} alt=""/>
+          <h2 className="openFilterButton" onClick={() => setOpenFilter(!openFilter)}>Filtros</h2> <Image className={`arrowDisplay ${openFilter?`arrowIconOpen`:"arrowIcon"}`}src={arrow} alt=""/>
           <div className={openFilter? "filter": "closedFilter"}>
-              <button onClick={() => {props.setCategoria("Todos");openSelect && setOpenSelect(false)}}>Todos los productos</button>
+              <button onClick={() => {props.setCategoria("Todos");openSelect && setOpenSelect(false); openFilter && setOpenFilter(false)}}>Todos los productos</button>
             {props.categorias.map((categoria) =>{
               let options = Object.entries(categoria)
               return(

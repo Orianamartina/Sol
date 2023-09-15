@@ -67,7 +67,13 @@
 .categoriasShop h3:hover{
     border-bottom: 1px solid var(--2);
 }
-
+.openFilterButton{
+        display: inline;
+        font-size: 1rem;
+}
+.arrowDisplay{
+    display: none;
+}
 @media (max-width:800px){
     .categoriasShop{
         position: relative;
@@ -91,11 +97,11 @@
         max-width: 82vw;
         height: 80vh;
     }
-    .openFilterButton{
-        display: inline;
-        font-size: 1rem;
-    }
+    
     .closefilterButton{
         text-align: center;
+    }
+    .arrowDisplay{
+        display: inline;
     }
 }
