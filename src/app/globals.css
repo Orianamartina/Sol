@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kavivanar&display=swap');
 :root {
 
   --1: #f78b64;
@@ -12,51 +9,14 @@
   --6: rgb(237, 211, 113);
   --7: #eaf9a8;
   --font2:'Montserrat', sans-serif;
-  /*--font:'Merienda', cursive*/
-  --font:'Kavivanar', cursive;
+
   
 }
-select{
-    background-color: var(--5);
-    border: none;
-    font-family: var(--font);
-    font-size:medium;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    border: 1px solid black;
 
-}
-select:focus{
-  border: none;
-}
-select:active{
-  border: none;
-}
-
-select:hover{
-
-}
-option {
-  border: 1px solid black;
-}
-
-option:checked{
-  background-color: var(--3);
-}
-option:focus{
-  background-color: var(--3);
-}
-
-@font-face {
-  font-family: "blackMango";
-  src: url("../../TTF/BlackMango-Black.ttf") format("truetype") ;
-  font-weight: normal;
-}
 
 body{
   width: 100%;
   margin: 0;
-  font-family: var(--font);
+  font-family: var(--font2);
 
 }

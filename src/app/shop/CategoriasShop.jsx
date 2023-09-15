@@ -6,6 +6,7 @@ import arrow from "../../../public/down-arrow.png"
 
 function CategoriasShop(props) {
   const [openSelect, setOpenSelect] = useState()
+  const [openFilter, setOpenFilter] = useState()
   const changeButtonState = (state) => {
     openSelect == state? setOpenSelect(false): setOpenSelect(state)
   }
@@ -21,12 +22,10 @@ function CategoriasShop(props) {
   }
   
   return (
-    <div className={openSelect? "categoriasShop openCat":"categoriasShop"}>
-        
-        <div className="selectMain" >
-          <div className="filter">
-            <button>Filtros:</button>
-            <button onClick={() => {props.setCategoria("Todos");openSelect && setOpenSelect(false)}}>Todos los productos</button>
+    <div className="categoriasShop">
+          <h2 className="openFilterButton" onClick={() => setOpenFilter(!openFilter)}>Filtros</h2> <Image className={openFilter?`arrowIconOpen`:"arrowIcon"}src={arrow} alt=""/>
+          <div className={openFilter? "filter": "closedFilter"}>
+              <button onClick={() => {props.setCategoria("Todos");openSelect && setOpenSelect(false)}}>Todos los productos</button>
             {props.categorias.map((categoria) =>{
               let options = Object.entries(categoria)
               return(
@@ -40,20 +39,23 @@ function CategoriasShop(props) {
                       return(
                         <>
                           <h3 key={opt} className="selectOptions" onClick={() => chooseCategory(opt, options[0][0])}>
-                            {opt}
+                            {`. ${opt}`}
                           </h3>
                         </>
                       )
                     }
           
 
-                  })}
+                  })}            
+
                 </div>
                 
               )
-            })}
+            })}                  
+            
+
           </div>
-      </div>
+
 
     </div>
   )

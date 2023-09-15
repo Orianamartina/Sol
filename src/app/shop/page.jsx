@@ -59,7 +59,7 @@ const prods =[
       
 ]
 const categorias = [
-  {Ropa:["Todos", "Sweaters", "Sacos", "Tops"]}, {Accesorios:["Todos", "Pantumedias", "Bufandas", "Cuellos Infinitos"]}
+  {Ropa:["Todos", "Sweaters", "Sacos", "Tops"]}, {Accesorios:["Todos", "Pantumedias", "Bufandas", "Cuellos Infinitos"]},{Bijouterie:["Collares", "Pulseras", "Gargantillas"]}
 ]
 
 
@@ -104,8 +104,10 @@ export default function Shop() {
       <div className={"shopPage"}>
         
         <CategoriasShop categorias={categorias} setCategoria={filtrarProductos} />
-        <h3 className="categoryTitle">{categoria == "Todos"? "Todos los productos": categoria}</h3>
-        <ProductSection productos={productos}/>
+         
+        <ProductSection productos={productos} categoria={categoria}/>
+
+        
       </div>
     
     </>

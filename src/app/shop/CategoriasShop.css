@@ -1,38 +1,32 @@
 
 
 .categoriasShop{
-    max-width: 100%;
-    font-size: small;
-    /*background-image: url("../../Images/ee20fd45-85f9-409a-b1df-1a1972f19fb4.jfif");
-    background-size: cover;*/
-    margin-top: 0;
-    padding: 2%;
-    height: 6vh;
-    transition: all 0.3s;
-    text-align: center;
-}
-.openCat{
-    height: 14vh;
-}
+    width: 17%;
+    padding-left: 2%;
+    padding-top: 6%;
+    font-family: var(--font2);
+    transition: 0.5s;
+    text-align: left;
 
-.categoriasShop h1{
-    letter-spacing: 1px;
-    font-size: medium;
-    display: inline;
 
 }
+
+
 .categoriasShop h3{
-    margin: 0;
+    margin: 4px;
+    margin-left: 20px;
 }
 .categoriasShop h2{
     margin: 0;
+    margin-bottom: 10px;
 }
 .filter{
     display: flex;
     width: 100%;
     justify-content: space-evenly;
     color: black;
-    transition: 1s;
+    transition: 1s; 
+    flex-direction: column;
 }
 
 .arrowIcon{
@@ -55,19 +49,53 @@
     height: fit-content;
     display: flex;
     align-items: center;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 4px;
+    letter-spacing: 1px;
+   cursor: pointer;
 }
 .selectOptions{
     text-align: left;
-    font-size: 0.7rem;
+    font-size: 1rem;
     padding: 2px;
-    font-family: var(--font2);
     font-weight: 400;
+    margin: 4px;
+    cursor: pointer;
+    width: fit-content;
 }
-.selectMain{
-    margin-top: 2%;
+.categoriasShop h3:hover{
+    border-bottom: 1px solid var(--2);
 }
-@media (min-width:800px){
-    .openCat{
-        height: 20vh;
+
+@media (max-width:800px){
+    .categoriasShop{
+        position: relative;
+        width: 90%;
+    }
+    .filter{
+        position: absolute;
+        top: 100%;
+        background-color: white;
+        max-width: 82vw;
+        height: 80vh;
+        justify-content: flex-start;
+        text-align: center;
+        padding: 10%;
+        left: 0;
+    }
+    .closedFilter{
+        position: absolute;
+        transform: translateX(-100%);
+        transition: all 1s;
+        max-width: 82vw;
+        height: 80vh;
+    }
+    .openFilterButton{
+        display: inline;
+        font-size: 1rem;
+    }
+    .closefilterButton{
+        text-align: center;
     }
 }
