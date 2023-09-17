@@ -41,7 +41,8 @@
 .link{
     text-decoration: none;
     transition: all 0.3s;
-    
+    color: white;
+    font-size: 1em;
 
     
 }
@@ -147,5 +148,8 @@
         width: 100%;
         text-align: center;
 
+    }
+    #header2 h1{
+        font-size: small;
     }
 }

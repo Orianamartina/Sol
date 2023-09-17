@@ -38,6 +38,10 @@
     direction: row;
     justify-content: space-evenly;
 }
+.blurry{
+    filter: blur(10px);
+    pointer-events: none;
+}
 @media (max-width:800px){
     #productDetail{
         flex-direction: column;

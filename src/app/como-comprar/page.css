@@ -1,0 +1,30 @@
+#como-comprar{
+    width: 50%;
+    margin: auto;
+    height: 80vh;
+    text-align: center;
+    padding-top: 5%;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+#como-comprarModal{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    height: fit-content;
+    padding: 5%;
+    border: 1px solid black;
+    background-color: white;
+    z-index: 10;
+    text-align: center;
+}
+
+@media (max-width:800px){
+    #como-comprarModal{
+        left: 5%;
+        width: 80%;
+        top: 20%;
+    }
+}

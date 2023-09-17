@@ -19,7 +19,7 @@ function Header() {
             <Link href="/shop" className="link" >
                 <h1>SHOP</h1>
             </Link>
-              <Link href="/" className="link" >
+              <Link href="/como-comprar" className="link" >
                 <h1>COMO COMPRAR</h1>
               </Link>
               
@@ -35,7 +35,7 @@ function Header() {
                 <h1>OPCION</h1>
               </Link>
               
-              <Link href="/"  className="link" >
+              <Link href="/contacto"  className="link" >
                 <h1>CONTACTO</h1>
               </Link> 
                 <Link href="/"  className="link" >

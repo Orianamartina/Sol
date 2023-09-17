@@ -59,7 +59,7 @@ const prods =[
       
 ]
 const categorias = [
-  {Ropa:["Todos", "Sweaters", "Sacos", "Tops"]}, {Accesorios:["Todos", "Pantumedias", "Bufandas", "Cuellos Infinitos"]},{Bijouterie:["Collares", "Pulseras", "Gargantillas"]}
+  {Ropa:["Todos", "Sweaters", "Sacos", "Tops"]}, {Accesorios:["Todos", "Pantumedias","Escarpines","Chalinas", "Bufandas", "Cuellos Infinitos", "Gorros"]},{Bijouterie:["Collares", "Pulseras", "Anillos", "Packs"]}, {Bandoleras:["Todas"]}
 ]
 
 

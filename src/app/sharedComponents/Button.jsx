@@ -8,7 +8,7 @@ function Button(props) {
 
   return (
     <>
-        <button className={props.class}>
+        <button className={props.class} onClick={props.onClick}>
             {props.icon == "back" && <Image className="icon" alt="back" src={back}/>}
             {props.text && <h1>{props.text}</h1>}
         </button>
