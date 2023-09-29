@@ -4,7 +4,9 @@ export const Slice = createSlice({
     name: 'redux',
     initialState: { 
         value: {
-           products: []
+           products: [],
+           cart:[],
+           cartIsOpen: false,
 
         } 
     },
@@ -13,12 +15,25 @@ export const Slice = createSlice({
         getProducts: (state, action) => {
             state.value.products = action.payload
         },
+        changeCartModalState: (state, action) => {
+            state.value.cartIsOpen = !state.value.cartIsOpen
+
+        },
+        addProductToCart : (state, action) => {
+            state.value.cart.push(action.payload)
+        },
+        removeProductToCart: (state, action) => {
+            state.value.cart.filter(prod => prod.id != action.payload)
+        }
     
     }
 })
 
 export const {
-    getProducts
+    getProducts,
+    addProductToCart,
+    removeProductToCart,
+    changeCartModalState
 } = Slice.actions
 
 export default Slice.reducer

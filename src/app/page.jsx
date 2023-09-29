@@ -14,6 +14,7 @@ import six from "../../public/6.png"
 import { useEffect, useState } from "react"
 import { useDispatch } from "react-redux"
 import MainBanner from "./components/MainBanner"
+import InstagramFollow from "./components/InstagramFollow"
 
 
 
@@ -75,11 +76,9 @@ export default function Home () {
     return(
         <>
             <MainBanner />
+            <InstagramFollow />
             <Destacados destacados={destacados}  />
-          {/*  <Categorias categorias={categorias}/>
-            <MoreContent />
-            <Info /> 
-    <Footer />*/}
+
 
         </>
     )

@@ -13,7 +13,7 @@ function Footer() {
                 <h3>Como comprar?</h3>
             </div>
             
-            <div >
+            <div>
                 <h3>Contacto:</h3>
                 <h3>addjaskda@gmail.com</h3>
                 <h3>+5411312382</h3>

@@ -12,7 +12,8 @@
     margin: auto;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:    space-evenly;
+    gap: 1%;
+    justify-content: space-between;
     margin-bottom: 7vh;
 
 
@@ -20,7 +21,8 @@
 }
 
 .tarjetaDeProductoContainer{
-    width: 30%;
+    width: 22%;
+    margin-bottom: 10px;
 }
 .destacadosTitle{
     font-weight: 300;

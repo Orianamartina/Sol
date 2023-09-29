@@ -10,7 +10,7 @@ function TarjetaDeProducto(props) {
         <div id="tarjetaDeProducto">
          
             <div className="imageDiv">
-               <Image src={props.producto.imagen} alt={props.producto.titulo}/>
+               <Image src={props.producto.imagen} width="200" height="200" alt={props.producto.titulo}/>
             </div>
            
 

@@ -17,7 +17,6 @@ function CategoriasShop(props) {
     else{
       props.setCategoria(cat)
     }
-    setOpenSelect(false)
     setOpenFilter(false)
     
   }

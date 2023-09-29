@@ -1,0 +1,24 @@
+#instagramFollow{
+    width: fit-content;
+    margin: auto;
+    margin-top: 7%;
+    margin-bottom:7%;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.instagramFollowImage{
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+#instagramFollow > div{
+    margin-bottom: 20px;
+}
+
+@media (max-width:800px){
+    #instagramFollow{
+        font-size: 40px;
+    }
+}

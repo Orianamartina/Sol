@@ -24,6 +24,8 @@
     transition: all 0.4s;
     border: 1px solid black;
     border-radius: 50px;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 .white-green-border-black:hover{
 

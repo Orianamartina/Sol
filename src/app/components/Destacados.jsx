@@ -1,3 +1,4 @@
+"use client";
 import Button from "../sharedComponents/Button"
 import TarjetaDeProducto from "../sharedComponents/TarjetaDeProducto"
 import "./Destacados.css"

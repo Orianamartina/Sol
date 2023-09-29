@@ -7,8 +7,11 @@ import Image from "next/image"
 import Button from "@/app/sharedComponents/Button"
 import Link from "next/link"
 import ComoComprar from "@/app/como-comprar/page"
+import { useDispatch } from "react-redux"
+import { addProductToCart } from "@/app/redux/redux"
 
 export default function ProductDetail() {
+    const dispatch = useDispatch()
     const params = useParams()
     const store = useStore()
     const [data, setData] = useState({})
@@ -49,7 +52,7 @@ export default function ProductDetail() {
                     <Button text="Guia de talles" class="pink-no-border" />
                   
                   </div>
-                    <Button text="Agregar al carrito" class="white-green-border-black" />
+                    <Button text="Agregar al carrito" class="white-green-border-black" onClick={() => dispatch(addProductToCart(data))}/>
                 
                 </div>
               </div>
