@@ -15,7 +15,7 @@ function Header() {
   const cartState =  store.getState().redux.value.cartIsOpen
   console.log(cartState)
   const setOpenCart = () => {
-    dispatch(changeCartModalState())
+    dispatch(changeCartModalState("true"))
   }
   return (
 
@@ -50,7 +50,7 @@ function Header() {
                   <Image className="cartImage" src={carro} onClick={setOpenCart}/>
               
             </div>
-            <Cart  cartState={cartState} setOpenCart={setOpenCart}/>
+           
         </div>
 
         
@@ -84,7 +84,6 @@ function Header() {
                 
               </div>
               <Image className="cartImage" src={carro} onClick={() => setOpenCart()}/>
-              <Cart  cartState={cartState} setOpenCart={() => setOpenCart()}/>
             </div>
 
   

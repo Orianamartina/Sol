@@ -17,14 +17,24 @@ export default function ProductDetail() {
     const [data, setData] = useState({})
     const [openModal, setOpenModal] = useState()
     const productId = params.product
-    useEffect(() => {
+    const [cartState, setCartState] = useState()
+  
+    const reduxCartState = store.getState().redux.value.cartIsOpen
+      
+      useEffect(() => {
         const products = store.getState().redux.value.products
         const selectedProduct = products.find(product =>  product.id == productId)
         setData(selectedProduct)
-    })
+          const changeCart = () => {
+            const state = store.getState().redux.value.cartIsOpen 
+            setCartState(state)
+          }
+          store.subscribe(changeCart)
+      },[reduxCartState])
+  
   
   return (
-    <div>
+    <div className={cartState? "blurred": ""}>
           
           {data &&
           <>
@@ -33,9 +43,7 @@ export default function ProductDetail() {
             }
             <div id="productDetail" className={openModal && "blurry"}> 
               <div className="productImageDiv">
-                <Link href={"/shop"}>
-                  <Button class="white-no-border" icon="back"/>
-                </Link>
+        
                 <div className="productImageContainer">
                   <Image className="productoDetalleImagen"src={data.imagen} alt={data.titulo} />
                 </div>

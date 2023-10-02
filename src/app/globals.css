@@ -13,7 +13,6 @@
   
 }
 
-
 body{
   width: 100%;
   margin: 0;
@@ -29,4 +28,8 @@ body{
 ::-webkit-scrollbar-thumb {
   background:var(--6);
   border-radius: 100px;
+}
+.blurred{
+  filter: blur(4px);
+  pointer-events: none;
 }

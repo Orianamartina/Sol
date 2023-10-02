@@ -6,7 +6,8 @@ export const Slice = createSlice({
         value: {
            products: [],
            cart:[],
-           cartIsOpen: false,
+            cartIsOpen: false,
+            
 
         } 
     },
@@ -16,7 +17,7 @@ export const Slice = createSlice({
             state.value.products = action.payload
         },
         changeCartModalState: (state, action) => {
-            state.value.cartIsOpen = !state.value.cartIsOpen
+            state.value.cartIsOpen = action.payload
 
         },
         addProductToCart : (state, action) => {

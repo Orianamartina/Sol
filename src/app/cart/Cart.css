@@ -34,14 +34,18 @@
     overflow-x: hidden;
 
 }
-.closeButtonContainer{
-    display: none;
- 
-}
+
 .cartBottomButtonContainer{
     padding: 15px;
     display: flex;
     justify-content: space-between;
+}
+.closeButtonContainer{
+    display: block;
+    align-self: flex-end;
+    padding-right: 15px;
+    padding-top: 15px;
+ 
 }
 @media (max-width:900px){
     #cart{
@@ -62,11 +66,5 @@
         overflow-x: hidden;
         
     }
-    .closeButtonContainer{
-        display: block;
-        align-self: flex-end;
-        padding-right: 15px;
-        padding-top: 15px;
-     
-    }
+  
 }

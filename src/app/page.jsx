@@ -3,7 +3,7 @@ import "./globals.css"
 import Banner from "./components/Banner"
 import Destacados from "./components/Destacados"
 import sampleImage from "../../public/sampleImage.jpeg"
-import { getProducts } from "./redux/redux"
+import { changeCartModalState, getProducts } from "./redux/redux"
 import sampleImage2 from "../../public/sampleImage2.jpg"
 import one from "../../public/1.png"
 import two from "../../public/2.png"
@@ -12,7 +12,7 @@ import four from "../../public/4.png"
 import five from "../../public/5.png"
 import six from "../../public/6.png"
 import { useEffect, useState } from "react"
-import { useDispatch } from "react-redux"
+import { useDispatch, useStore } from "react-redux"
 import MainBanner from "./components/MainBanner"
 import InstagramFollow from "./components/InstagramFollow"
 
@@ -67,19 +67,28 @@ export default function Home () {
     const dispatch = useDispatch()
     const [productos, setProductos] = useState([])
     const [destacados, setDestacados] = useState([])
+    const [cartState, setCartState] = useState()
+    const store = useStore()
+    const reduxCartState = store.getState().redux.value.cartIsOpen
+    
     useEffect(() => {
         dispatch(getProducts(prods))
         setProductos(prods)
         setDestacados(prods.slice(0, 5))
-    },[])
-      
+        const changeCart = () => {
+          const state = store.getState().redux.value.cartIsOpen 
+          setCartState(state)
+        }
+        store.subscribe(changeCart)
+    },[reduxCartState])
+  
     return(
-        <>
+        <div className={!cartState? " ": "blurred"}>
             <MainBanner />
             <InstagramFollow />
             <Destacados destacados={destacados}  />
 
 
-        </>
+        </div>
     )
 }

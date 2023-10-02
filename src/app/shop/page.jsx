@@ -71,19 +71,29 @@ export default function Shop() {
   const [productos, setProductos] = useState()
   const [categoria, setCategoria] = useState("")
 
+  
   const dispatch = useDispatch()
   const store = useStore()
-  useEffect(() => {
-    const products = store.getState().redux.value.products
-    if (products.length > 1){
-      setProductos(products)
-    }else{
-      dispatch(getProducts(prods))
-      setProductos(prods)
-    }
-    setCategoria("Todos")
+  const [cartState, setCartState] = useState()
+
+  const reduxCartState = store.getState().redux.value.cartIsOpen
     
-  },[])
+    useEffect(() => {
+      const products = store.getState().redux.value.products
+      if (products.length > 1){
+        setProductos(products)
+      }else{
+        dispatch(getProducts(prods))
+        setProductos(prods)
+      }
+      setCategoria("Todos")
+        const changeCart = () => {
+          const state = store.getState().redux.value.cartIsOpen 
+          setCartState(state)
+        }
+        store.subscribe(changeCart)
+    },[reduxCartState])
+
   
  const filtrarProductos = (categoria) => {
     const products = store.getState().redux.value.products
@@ -101,7 +111,7 @@ export default function Shop() {
 
   return (
     <>
-      <div className={"shopPage"}>
+      <div className={`${"shopPage"} ${cartState?"blurred":""}`}>
         
         <CategoriasShop categorias={categorias} setCategoria={filtrarProductos} />
          
