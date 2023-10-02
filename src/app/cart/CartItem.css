@@ -1,0 +1,43 @@
+#cartItem{
+    display: flex;
+    padding: 2px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+#cartItem h1{
+    color: linen;
+    margin: 0;
+}
+#cartItem h2{
+    color: linen;
+    margin: 0;
+    font-size: 16px;
+}
+.cartItemImage{
+    width: 100%;
+    height: auto;
+    align-self: center;
+    object-fit: cover;
+
+}
+.cartItemImageContainer{
+    width: 80px;
+    height: 80px;
+    align-self: center;
+}
+.cartItemDataContainer{
+    max-width: 70%;
+    
+}
+.cartItemPriceContainer{
+    display: flex;
+    gap: 5px;
+  
+}
+.binIcon{
+    filter: invert(100);
+    width: 17px;
+    height: 20px;
+    cursor: pointer;
+}

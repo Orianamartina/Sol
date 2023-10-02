@@ -1,16 +1,22 @@
 import "./Header.css"
 import Link from "next/link"
 import carro from "../../../public/carro.png"
-import { useDispatch } from "react-redux"
+import { useDispatch, useStore } from "react-redux"
 import { changeCartModalState } from "../redux/redux"
-import Cart from "../sharedComponents/Cart"
+import Cart from "../cart/Cart"
 import Image from "next/image"
 import logo from "../../../public/logo.png"
 import { useEffect, useState } from "react"
 function Header() {
   const [openMenu, setOpenMenu] = useState()
-  const [openCart, setOpenCart] = useState()
+  //const [openCart, setOpenCart] = useState()
   const dispatch = useDispatch()
+  const store = useStore()
+  const cartState =  store.getState().redux.value.cartIsOpen
+  console.log(cartState)
+  const setOpenCart = () => {
+    dispatch(changeCartModalState())
+  }
   return (
 
     <>
@@ -41,10 +47,10 @@ function Header() {
               <Link href="/contacto"  className="link" >
                 <h1>CONTACTO</h1>
               </Link> 
-                  <Image className="carritoImage" src={carro} onClick={() => setOpenCart(!openCart)}/>
+                  <Image className="cartImage" src={carro} onClick={setOpenCart}/>
               
             </div>
-            <Cart  cartState={openCart}/>
+            <Cart  cartState={cartState} setOpenCart={setOpenCart}/>
         </div>
 
         
@@ -75,8 +81,10 @@ function Header() {
                   <Link href="/"  className={openMenu? "link show delay-6": "link opac0 delay-1"}  >
                   <h1 onClick={() => setOpenMenu(!openMenu)}>OPCION</h1>
                 </Link>
+                
               </div>
-              <Image className="carritoImage" src={carro} onClick={() => setOpenCart(!openCart)}/>
+              <Image className="cartImage" src={carro} onClick={() => setOpenCart()}/>
+              <Cart  cartState={cartState} setOpenCart={() => setOpenCart()}/>
             </div>
 
   

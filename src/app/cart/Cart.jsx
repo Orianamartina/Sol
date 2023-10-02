@@ -1,7 +1,7 @@
 
 
 import { useStore } from "react-redux"
-import Button from "./Button"
+import Button from "../sharedComponents/Button"
 import { useState, useEffect } from "react"
 import "./Cart.css"
 import CartItem from "./CartItem"
@@ -13,10 +13,14 @@ export default function Cart(props) {
         setData(products)
        
     })
-    
+   
  const cartIsOpen = props.cartState
   return (
     <div id="cart" className={cartIsOpen?"openCart":"closedCart"}>
+        <div className="closeButtonContainer">
+          <Button text="X" onClick={props.setOpenCart}/>  
+        </div>
+        
         <div className="cartItemsContainer">
         {data && data.map(product => {
             return(
@@ -27,7 +31,7 @@ export default function Cart(props) {
         </div>
     
 
-        <div>
+        <div className="cartBottomButtonContainer">
             <Button text="Cancelar compra" />
             <Button text="Realizar compra" />
         
