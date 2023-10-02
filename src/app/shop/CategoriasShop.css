@@ -101,7 +101,7 @@
     .closedFilter{
         position: absolute;   
         top: 100%;
-        transform: translateX(-0%);
+        transform: translateX(-120%);
         transition: all 1s;
         background-color: linen;
         max-width: 79vw;
